@@ -19,7 +19,7 @@ export class NumberListComponent {
   isLoading = false;
   errorMessage = '';
   currentPage = 1; 
-  itemsPerPage = 2; 
+  itemsPerPage = 8; 
   totalPages = 0; 
 
   constructor(private numberService: NumberService) {}
@@ -33,7 +33,7 @@ export class NumberListComponent {
     this.numberService.fetchNumbers().subscribe({
       next: (data) => {
         this.numbers = data;
-        this.filteredNumbers = data; // Initialize filtered numbers
+        this.filteredNumbers = data;
         this.totalPages = Math.ceil(this.filteredNumbers.length / this.itemsPerPage);
         this.updatePaginatedNumbers();
         this.isLoading = false;
