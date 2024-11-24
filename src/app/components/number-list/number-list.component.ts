@@ -32,6 +32,11 @@ export class NumberListComponent {
     this.isLoading = true;
     this.numberService.fetchNumbers().subscribe({
       next: (data) => {
+        if(data.length == 0) {
+          this.errorMessage = "No Records Available";
+          this.isLoading = false;
+          return
+        }
         this.numbers = data;
         this.filteredNumbers = data;
         this.totalPages = Math.ceil(this.filteredNumbers.length / this.itemsPerPage);
