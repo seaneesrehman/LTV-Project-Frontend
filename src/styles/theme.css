@@ -1,0 +1,53 @@
+/* Color Palette */
+:root {
+    --primary-color: #0077cc;
+    --primary-light: #e4f3fb;
+    --primary-dark: #005fa3;
+    --accent-color: #ffd700;
+    --background-light: #e4f3fb;
+    --background-gradient: linear-gradient(180deg, #e4f3fb, #fff3d3);
+    --text-primary: #333333;
+    --text-secondary: #666666;
+  }
+  
+  /* Reusable Classes */
+  body {
+    background: var(--background-light);
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+  
+  .navbar {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+  }
+  
+  .btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--primary-dark);
+  }
+  
+  .btn-accent {
+    background-color: var(--accent-color);
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  
+  .btn-accent:hover {
+    background-color: #e6be00; /* Darker shade of accent color */
+  }
+  .navbar-brand{
+    align:
+  }
+  
