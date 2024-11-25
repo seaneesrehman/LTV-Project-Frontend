@@ -34,7 +34,7 @@ I have added demo with table and cards. However I have gone with cards approach 
 - API calls have been made through serivces using dependency injection
 - Environment files used for API key and URL.
 
-In demo I have added some extra records to show pagination. For the final code I have prefer card approach.
+In demo I have added some extra records to show pagination. For the final code I have prefer card approach. [Enhancement] We can make it based on condition as well weather user wants to view table or grid.
 
 https://github.com/user-attachments/assets/63777174-d174-4112-8062-be7f8631d7da
 
